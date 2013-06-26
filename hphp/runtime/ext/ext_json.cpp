@@ -23,6 +23,13 @@
 namespace HPHP {
 IMPLEMENT_DEFAULT_EXTENSION(json);
 ///////////////////////////////////////////////////////////////////////////////
+const int64_t k_JSON_ERROR_NONE           = 0;
+const int64_t k_JSON_ERROR_DEPTH          = 1;
+const int64_t k_JSON_ERROR_STATE_MISMATCH = 2;
+const int64_t k_JSON_ERROR_CTRL_CHAR      = 3;
+const int64_t k_JSON_ERROR_SYNTAX         = 4;
+const int64_t k_JSON_ERROR_UTF8           = 5;
+
 const int64_t k_JSON_HEX_TAG           = 1<<0;
 const int64_t k_JSON_HEX_AMP           = 1<<1;
 const int64_t k_JSON_HEX_APOS          = 1<<2;
